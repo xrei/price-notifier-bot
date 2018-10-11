@@ -1,8 +1,8 @@
 
-import Stage from 'telegraf/stage'
-import { chooseCurrencies } from '.'
+// import Stage from 'telegraf/stage'
+// import { chooseCurrencies } from '.'
 
-const stage = new Stage([chooseCurrencies])
-stage.command('Cancel', () => Stage.leave())
+// const stage = new Stage([chooseCurrencies])
+// stage.command('Cancel', () => Stage.leave())
 
-export default stage
+// export default stage
