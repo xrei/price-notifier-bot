@@ -34,7 +34,7 @@ export async function onStart(ctx: ContextMessageUpdate): Promise<Message> {
 }
 
 export function startCommandHandler(ctx: ContextMessageUpdate): Promise<Message> {
-  const greeting = 'This bot will notify you about current cryptocurrency prices on selected exchanges and coinmarketcap'
+  const greeting = 'This bot will notify you about current cryptocurrency prices from coinmarketcap'
   return ctx.reply(
     greeting,
     mainKb
