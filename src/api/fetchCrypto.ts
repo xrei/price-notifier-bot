@@ -16,7 +16,7 @@ let request = (params?: {}): Observable<AxiosResponse> => {
       symbol: 'BTC,ETH,EOS'
     },
     headers: {
-      'X-CMC_PRO_API_KE': cmcToken
+      'X-CMC_PRO_API_KEY': cmcToken
     }
   }))
 }
