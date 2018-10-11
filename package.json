@@ -1,0 +1,40 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "kek",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon -w ./src/* --ext \".ts\" --exec babel-node ./src --extensions \".ts\"",
+    "build-js": "npx babel src --out-dir ./dist -x \".ts\"",
+    "build-types": "npx tsc --emitDeclarationOnly",
+    "build": "yarn build-types && yarn build-js"
+  },
+  "author": "rei",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "nodemon": "^1.18.4",
+    "tslint": "^5.11.0",
+    "tslint-immutable": "^4.7.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@types/dotenv-safe": "^5.0.0",
+    "@types/invariant": "^2.2.29",
+    "@types/ramda": "^0.25.37",
+    "axios": "^0.18.0",
+    "dotenv-safe": "^6.0.0",
+    "fluture": "^10.1.0",
+    "invariant": "^2.2.4",
+    "ramda": "^0.25.0",
+    "rxdb": "^8.0.1",
+    "rxjs": "^6.3.2",
+    "sanctuary": "^0.15.0",
+    "telegraf": "^3.24.0"
+  }
+}

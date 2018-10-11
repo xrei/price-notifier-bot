@@ -1,0 +1,33 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-immutable"
+  ],
+  "jsRules": {},
+  "rules": {
+    "semicolon": false,
+    "trailing-comma": false,
+    "quotemark": false,
+    "no-console": false,
+    "interface-name": false,
+    "prefer-const":false,
+    "max-line-length": false,
+    "ordered-imports": false,
+    "arrow-parens": false,
+    "member-access": false,
+    "member-ordering": false,
+    "curly": false,
+    "object-literal-sort-keys": false,
+    // immutable ts
+    // Recommended built-in rules
+    "no-var-keyword": true,
+    "no-parameter-reassignment": true,
+    "typedef": [true, "call-signature"],
+
+    // Immutability rules
+    "no-delete": true,
+    "no-method-signature": true
+  },
+  "rulesDirectory": []
+}
