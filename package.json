@@ -21,20 +21,20 @@
     "nodemon": "^1.18.4",
     "tslint": "^5.11.0",
     "tslint-immutable": "^4.7.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.1.2"
   },
   "dependencies": {
     "@types/dotenv-safe": "^5.0.0",
     "@types/invariant": "^2.2.29",
-    "@types/ramda": "^0.25.37",
+    "@types/ramda": "^0.25.39",
     "axios": "^0.18.0",
-    "dotenv-safe": "^6.0.0",
+    "dotenv-safe": "^6.1.0",
     "fluture": "^10.1.0",
     "invariant": "^2.2.4",
     "ramda": "^0.25.0",
     "rxdb": "^8.0.1",
-    "rxjs": "^6.3.2",
+    "rxjs": "^6.3.3",
     "sanctuary": "^0.15.0",
-    "telegraf": "^3.24.0"
+    "telegraf": "^3.24.1"
   }
 }

@@ -707,10 +707,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
   integrity sha512-fCHV45gS+m3hH17zgkgADUSi2RR1Vht6wOZ0jyHP8rjiQra9f+mIcgwPQHllmDocYOstIEbKlxbFDYlgrTPYqw==
 
-"@types/ramda@^0.25.37":
-  version "0.25.37"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.37.tgz#99d91c0a8d7fde279c7438b4dc54354b73385973"
-  integrity sha512-Xq7XGb8m5/C4MdNWY2ozi07o8Y8022vo9pTgGfKRksyHzIdsv9JZ27O9wFE80nLDbJZykiKExFIjOfzpPXsQgA==
+"@types/ramda@^0.25.39":
+  version "0.25.39"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.39.tgz#7f6ddc0baa6e7f99860e7752dcfbeae5655bf525"
+  integrity sha512-GJr1BOUjtdLexxQLhflMw1tCDav3csdUTC7twHx0GZUF9RTWGnJkYnUFAZE5cv1YnefgZabdfC8GvtJgVmQL7A==
 
 abab@^2.0.0:
   version "2.0.0"
@@ -1953,17 +1953,17 @@ dot-prop@^4.1.0:
   dependencies:
     is-obj "^1.0.0"
 
-dotenv-safe@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv-safe/-/dotenv-safe-6.0.0.tgz#8e5e5a8a7b0f588d22a8d7e8000d21a8ec42194f"
-  integrity sha512-mYSw35oDucjhRiM/nwV+bNKg+Re5W9uLR1bJIxqijlMCd8qkgRYppMxrAINDZvZLb36YnHF08s4bw6+0jR+mfw==
+dotenv-safe@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv-safe/-/dotenv-safe-6.1.0.tgz#df6e72ced7d5bcfd9d870c9f656962a02197337b"
+  integrity sha512-O02OUTS+XmoRNZR4kRjJ9jlUGvQoXpMeTVVEBc8hUtgvPTgVZpsZH7TOocq4RVDpPrs2xGPwj6gIWjqRX+ErHA==
   dependencies:
-    dotenv "^6.0.0"
+    dotenv "^6.1.0"
 
-dotenv@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
-  integrity sha512-FlWbnhgjtwD+uNLUGHbMykMOYQaTivdHEmYwAKFjn6GKe/CqY0fNae93ZHTd20snh9ZLr8mTzIL9m0APQ1pjQg==
+dotenv@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.1.0.tgz#9853b6ca98292acb7dec67a95018fa40bccff42c"
+  integrity sha512-/veDn2ztgRlB7gKmE3i9f6CmDIyXAy6d5nBq+whO9SLX+Zs1sXEgFLPi+aSuWqUuusMfbi84fT8j34fs1HaYUw==
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -5831,10 +5831,10 @@ rxdb@^8.0.1:
     unload "2.0.2"
     url "^0.11.0"
 
-rxjs@^6.3.2:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.2.tgz#6a688b16c4e6e980e62ea805ec30648e1c60907f"
-  integrity sha512-hV7criqbR0pe7EeL3O66UYVg92IR0XsA97+9y+BWTePK9SKmEI5Qd3Zj6uPnGkNzXsBywBQWTvujPl+1Kn9Zjw==
+rxjs@^6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
+  integrity sha512-JTWmoY9tWCs7zvIk/CvRjhjGaOd+OVBM987mxFo+OW66cGpdKjZcpmc74ES1sB//7Kl/PAe8+wEakuhG4pcgOw==
   dependencies:
     tslib "^1.9.0"
 
@@ -6382,17 +6382,16 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
 
-telegraf@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.24.0.tgz#10bd3ef6771401dfbe93fba9c24b3cc75fdefe7b"
-  integrity sha512-BLbIidffj6Ot1Ti1J+qB81oa/rtIBLiNC8tfjFXj778BHpCMIS0rU+A3ynguHwCBwSW6E6nLCiCj6P9CEEdyhg==
+telegraf@^3.24.1:
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.24.1.tgz#bfcfe326210ea9d341032a6e6910e36f4c25440c"
+  integrity sha512-+beVzq+fZ+kDpIWKM+MzxqIfHDYqYvklmDYrO2Kz7JsZaMsBcRAP9rvbyu9hpgwqDLaa4jrrGRVScaWTOiraNg==
   dependencies:
     "@types/node" "^10.1.2"
     debug "^4.0.1"
     node-fetch "^2.2.0"
     sandwich-stream "^1.0.0"
     telegram-typings "^3.6.0"
-    typescript "^3.0.1"
 
 telegram-typings@^3.6.0:
   version "3.6.1"
@@ -6699,10 +6698,10 @@ type-is@~1.6.15, type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typescript@^3.0.1, typescript@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
-  integrity sha512-kk80vLW9iGtjMnIv11qyxLqZm20UklzuR2tL0QAnDIygIUIemcZMxlMWudl9OOt76H3ntVzcTiddQ1/pAAJMYg==
+typescript@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.2.tgz#c03a5d16f30bb60ad8bb6fe8e7cb212eedeec950"
+  integrity sha512-gOoGJWbNnFAfP9FlrSV63LYD5DJqYJHG5ky1kOXSl3pCImn4rqWy/flyq1BRd4iChQsoCqjbQaqtmXO4yCVPCA==
 
 uglify-js@^3.1.4:
   version "3.4.9"
