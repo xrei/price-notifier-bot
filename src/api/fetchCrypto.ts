@@ -1,7 +1,7 @@
-import { interval, Observable, from } from 'rxjs'
-import { switchMap, map as RxMap, startWith } from 'rxjs/operators'
+import { interval, Observable, from, of } from 'rxjs'
+import { switchMap, map as RxMap, startWith, catchError } from 'rxjs/operators'
 import axios, { AxiosResponse } from 'axios'
-import { getVar, mergePaths, prop } from '../utils'
+import { getVar, mergePaths } from '../utils'
 import { compose, map as Rmap, values, pickAll} from 'ramda'
 // import Maybe from '../Maybe'
 
@@ -16,7 +16,7 @@ let request = (params?: {}): Observable<AxiosResponse> => {
       symbol: 'BTC,ETH,EOS'
     },
     headers: {
-      'X-CMC_PRO_API_KEY': cmcToken
+      'X-CMC_PRO_API_KE': cmcToken
     }
   }))
 }
@@ -43,7 +43,7 @@ let joinStrs = (val: ReadonlyArray<string>): string => val.join('\n\n')
 let mapVal = <T extends AxiosResponse>(x: T) => {
   if (x.data.status.error_message !== null) {
     console.error(x.data.status.error_message)
-    return x.data.status.error_message
+    throw new Error(x.data.status.error_message)
   }
 
   return compose(
@@ -54,13 +54,12 @@ let mapVal = <T extends AxiosResponse>(x: T) => {
   )(x.data.data)
 }
 
-// $todo
-// error handling
 let notifier = (params?: {}, time: number = 60000 * 60) => {
   return interval(time).pipe(
     startWith(0),
     switchMap(() => request(params)),
-    RxMap(mapVal)
+    RxMap(mapVal),
+    catchError((err) => of(err))
   )
 }
 
