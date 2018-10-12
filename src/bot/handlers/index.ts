@@ -24,7 +24,6 @@ export function onStop(ctx: ContextMessageUpdate): Promise<Message> {
 }
 
 export async function onStart(ctx: ContextMessageUpdate): Promise<Message> {
-  // let url = 'https://jsonplaceholder.typicode.com/todos/1'
   let s = notifier().subscribe(res => ctx.replyWithMarkdown(res as string))
 
   getUserId(ctx)

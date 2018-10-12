@@ -3,7 +3,6 @@ import { switchMap, map as RxMap, startWith, catchError } from 'rxjs/operators'
 import axios, { AxiosResponse } from 'axios'
 import { getVar, mergePaths } from '../utils'
 import { compose, map as Rmap, values, pickAll} from 'ramda'
-// import Maybe from '../Maybe'
 
 let request = (params?: {}): Observable<AxiosResponse> => {
   const cmcToken = getVar('CMCTOKEN')
