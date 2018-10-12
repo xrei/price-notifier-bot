@@ -4,7 +4,7 @@
   "description": "kek",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon -w ./src/* --ext \".ts\" --exec babel-node ./src --extensions \".ts\"",
+    "dev": "nodemon -w ./src --ext \".ts\" --exec babel-node ./src --extensions \".ts\"",
     "build-js": "npx babel src --out-dir ./dist -x \".ts\"",
     "build-types": "npx tsc --emitDeclarationOnly",
     "build": "rimraf dist && yarn build-types && yarn build-js",
