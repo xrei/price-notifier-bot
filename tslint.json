@@ -24,6 +24,7 @@
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
     "typedef": [true, "call-signature"],
+    "array-type": [true, "generic"],
 
     // Immutability rules
     "no-delete": true,

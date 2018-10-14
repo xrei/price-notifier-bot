@@ -1,1 +1,1 @@
-export { notifier } from './fetchCrypto'
+export { notifier } from './notifier'
