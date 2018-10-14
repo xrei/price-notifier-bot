@@ -46,7 +46,11 @@ let getVals = <T>(x: T) => {
  * @param  {T} val
  */
 let makeStrs = <T extends CryptoObject>(val: T): string => {
-  return `*${val.name}* (${val.symbol})\n*$${val.price.toFixed(2)}*\n${val.percent_change_1h}% change within hour`
+  let change = (/-/).test(String(val.percent_change_1h))
+    ? `📉 ${val.percent_change_1h}% ↓`
+    : `📈 ${val.percent_change_1h}% ↑`
+
+  return `*${val.name}* (${val.symbol})\n*$${val.price.toFixed(2)}*\n${change} change within hour`
 }
 /**
  * Concat our array with strings from `makeStrs` to one string
