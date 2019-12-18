@@ -68,15 +68,20 @@ let mapVal = <T extends AxiosResponse>(x: T) => {
     console.error(x.data.status.error_message)
     throw new Error(x.data.status.error_message)
   }
-
+  const ethPrice = x.data.data.ETH.quote.USD.price.toFixed(3)
+  console.log(ethPrice)
   // compose our functions from bottom to top with Observable response as param
   // then return processed value
-  return compose(
+  const msg = compose(
     joinStrs,
     Rmap(makeStrs),
     Rmap(getVals),
     values
   )(x.data.data)
+  return {
+    message: msg,
+    ethPrice
+  }
 }
 
 /**
