@@ -40,7 +40,7 @@ export function onStop(ctx: ContextMessageUpdate): Promise<Message> {
  */
 export async function onStart(ctx: ContextMessageUpdate): Promise<Message> {
   let s = notifier().subscribe(res => {
-    spamIfPrice(123, Number(res.ethPrice), ctx)
+    spamIfPrice(110, Number(res.ethPrice), ctx)
     return ctx.replyWithMarkdown(res.message as string)
   })
 
@@ -66,5 +66,5 @@ function spamIfPrice(watchPrice: number, price: number, ctx: ContextMessageUpdat
     setTimeout(() => {
       clearInterval(interval)
     }, 15 * 60000)
-  } 
+  }
 }

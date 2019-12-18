@@ -69,7 +69,7 @@ let mapVal = <T extends AxiosResponse>(x: T) => {
     throw new Error(x.data.status.error_message)
   }
   const ethPrice = x.data.data.ETH.quote.USD.price.toFixed(3)
-  console.log(ethPrice)
+
   // compose our functions from bottom to top with Observable response as param
   // then return processed value
   const msg = compose(
@@ -100,7 +100,7 @@ let mapVal = <T extends AxiosResponse>(x: T) => {
  * @param  {{}} params?
  * @param  {number} time default 1 hour interval
  */
-let notifier = (params?: {}, time: number = 60000 * 60) => {
+let notifier = (params?: {}, time: number = 60000 * 30) => {
   return interval(time).pipe(
     startWith(0),
     switchMap(() => request(params)),
