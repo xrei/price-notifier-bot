@@ -23,7 +23,7 @@ let request = (params?: {}): Observable<AxiosResponse> => {
     url: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest',
     params: {
       convert: 'USD',
-      symbol: 'BTC,ETH,EOS'
+      symbol: 'BTC,ETH,DOGE'
     },
     headers: {
       'X-CMC_PRO_API_KEY': cmcToken

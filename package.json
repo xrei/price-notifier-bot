@@ -29,11 +29,10 @@
   "dependencies": {
     "@types/dotenv-safe": "^8.1.1",
     "@types/invariant": "^2.2.34",
-    "@types/ramda": "^0.27.34",
-    "axios": "^0.21.1",
+    "@types/ramda": "^0.27.64",
+    "axios": "^0.25.0",
     "dotenv-safe": "^8.2.0",
     "invariant": "^2.2.4",
-    "pm2": "^4.5.1",
     "ramda": "^0.27.1",
     "rxjs": "^6.6.3",
     "telegraf": "^3.38.0"
