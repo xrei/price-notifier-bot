@@ -38,7 +38,7 @@ let getVals = <T>(x: T) => {
   return compose(
     pickAll(['name', 'symbol', 'price', 'percent_change_1h']),
     mergePaths([['quote', 'USD'], {}])
-  )(x)
+  )(x as never)
 }
 
 /**
